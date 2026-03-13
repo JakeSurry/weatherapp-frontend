@@ -53,7 +53,6 @@ function renderOutput(output) {
   weatherDiv.innerHTML = output;
   weatherDiv.style.display = "flex";
   weatherDiv.style.width = `${form.offsetWidth}px`;
-  weatherDiv.style.display = "flex";
 }
 
 window.addEventListener("resize", () => {
