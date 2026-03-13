@@ -10,7 +10,7 @@ form.addEventListener("submit", async (event) => {
   }
 
   try {
-    const response = await fetch(`https://weatherapp-backend-1-wqk4.onrender.com/weather?city=${city}`);
+    const response = await fetch(`https://weatherapp-backend-1-wqk4.onrender.com/weather?city=${city.replace(/ /g, "-")}`);
     const data = await response.json();
 
     if (!response.ok) {
